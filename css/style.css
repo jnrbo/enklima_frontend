@@ -1,0 +1,111 @@
+
+body {
+    height: 100%;
+    width: 100%;
+    background: black url("../security.png");
+    background-size: 100%;
+    background-position: center;
+    color: #f0f0f2;
+    font-family: sans-serif;
+}
+
+section {
+    margin: 45px;
+}
+
+h1 {
+    margin: 15px;
+    display: inline-block;
+}
+
+button {
+    padding: 15px 25px;
+    margin: 5px;
+    font-weight: bold;
+    color: #000;
+    border-radius: 2px;
+    background: aquamarine;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.admin-only {
+    display: none;
+}
+
+.admin .admin-only {
+    display: inline-block;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="number"], select {
+    width: 200px;
+    margin: 15px 0;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: black;
+}
+
+input[type="checkbox"] {
+    font-size: 2em;
+}
+
+button:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+}
+
+button#logout {
+    margin: 15px;
+    display: inline-block;
+    background: darkred;
+    color: #f0f0f2;
+    float: right;
+}
+
+button#home {
+    margin: 15px 50px;
+    background: #676767;
+    color: #f0f0f2;
+    display: inline-block;
+    float: right;
+}
+
+table {
+    border-collapse: collapse;
+    background: #f0f0f2;
+    width: 100%;
+    color: #676767;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table thead {
+    background: #e0e0e0;
+}
+
+table thead th {
+    color: #000;
+    padding: 10px;
+}
+
+table tbody tr {
+    margin: 5px;
+}
+
+table tbody tr td {
+    text-align: center;
+    padding: 10px;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+.delete {
+    background: darkred;
+    color: #f0f0f2;
+}

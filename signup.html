@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enklima - Signup</title>
+
+    <script src="js/axios.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Criar usuário</h1>
+        <button id="home" onclick="homePage();">Inicio</button>
+    </header>
+    <hr>
+    <section>
+        <div class="form">
+            <input id="name" placeholder="Nome completo" type="text">
+            <br>
+            <input id="registry" placeholder="Registro" type="text">
+            <br>
+            <input id="password" placeholder="Senha" type="password">
+            <br>
+            <input id="patent" placeholder="Patente" type="text">
+            <br>
+            <input id="age" placeholder="Idade" type="number">
+
+            <br><br>
+
+            <button onclick="signup()">Cadastrar</button>
+        </div>
+    </section>
+
+    <script>
+
+        function success(user) {
+            alert("Usuário criado com sucesso!");
+            homePage();
+        }
+
+        function error(message) {
+            alert(message);
+        }
+
+        function signup() {
+            var name = document.getElementById("name").value;
+            var registry = document.getElementById("registry").value;
+            var password = document.getElementById("password").value;
+            var patent = document.getElementById("patent").value;
+            var age = document.getElementById("age").value;
+
+            performSignup(registry, password, age, patent, name, success, error);
+        }
+
+
+    </script>
+</body>
+</html>
